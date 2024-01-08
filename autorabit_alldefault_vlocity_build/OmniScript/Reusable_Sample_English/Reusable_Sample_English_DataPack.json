@@ -1,0 +1,22 @@
+{
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "Send Action Screen",
+    "OmniProcessElement": [
+        "Reusable_Sample_English_Element_Welcome-Screen.json",
+        "Reusable_Sample_English_Element_HowManyDevelopers.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "Reusable_Sample_English_PropertySetConfig.json",
+    "SubType": "Sample",
+    "Type": "Reusable",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Reusable/Sample/English",
+    "WebComponentKey": "1f10fe62-8749-8aa6-e7ec-ca76e32426a8"
+}
