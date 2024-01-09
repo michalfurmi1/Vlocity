@@ -8,8 +8,8 @@
     "Language": "English",
     "Name": "Send Action Screen",
     "OmniProcessElement": [
-        "Development_UpdateScreen_English_Element_Extract.json",
-        "Development_UpdateScreen_English_Element_Welcome-Screen.json",
+        "Development_UpdateScreen_English_Element_Extract-Data-From-Account.json",
+        "Development_UpdateScreen_English_Element_Welcome-Screen-Dev.json",
         "Development_UpdateScreen_English_Element_HowManyDevelopers.json"
     ],
     "OmniProcessType": "OmniScript",
@@ -19,5 +19,5 @@
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcess",
     "VlocityRecordSourceKey": "OmniProcess/Development/UpdateScreen/English",
-    "WebComponentKey": "efd17e0a-2d10-986b-1e48-eafe57b84b35"
+    "WebComponentKey": "9c566232-c130-838d-a217-210285341706"
 }

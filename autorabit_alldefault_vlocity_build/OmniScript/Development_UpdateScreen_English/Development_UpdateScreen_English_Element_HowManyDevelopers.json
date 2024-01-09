@@ -9,7 +9,7 @@
         "VlocityRecordSObjectType": "OmniProcess"
     },
     "ParentElementId": {
-        "Name": "Welcome Screen",
+        "Name": "Welcome Screen Dev",
         "OmniProcessId": {
             "Name": "Send Action Screen",
             "VlocityDataPackType": "VlocityMatchingKeyObject",
@@ -17,10 +17,10 @@
             "VlocityRecordSObjectType": "OmniProcess"
         },
         "VlocityDataPackType": "VlocityMatchingKeyObject",
-        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Development/UpdateScreen/English/Welcome Screen",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Development/UpdateScreen/English/Welcome Screen Dev",
         "VlocityRecordSObjectType": "OmniProcessElement"
     },
-    "ParentElementName": "Welcome Screen",
+    "ParentElementName": "Welcome Screen Dev",
     "ParentElementType": "Step",
     "PropertySetConfig": {
         "HTMLTemplateId": "",
