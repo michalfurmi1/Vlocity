@@ -54,7 +54,9 @@ manifest:
 - VlocityUITemplate
 - VqMachine
 - VqResource
+- OmniScript/Development_UpdateScreen_English
 maxDepth: -1
 autoUpdateSettings: true
 separateMatrixVersions: true
 separateCalculationProcedureVersions: false
+CompileOnBuild: true

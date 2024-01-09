@@ -1,0 +1,23 @@
+{
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "Send Action Screen",
+    "OmniProcessElement": [
+        "Development_UpdateScreen_English_Element_Extract.json",
+        "Development_UpdateScreen_English_Element_Welcome-Screen.json",
+        "Development_UpdateScreen_English_Element_HowManyDevelopers.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "Development_UpdateScreen_English_PropertySetConfig.json",
+    "SubType": "UpdateScreen",
+    "Type": "Development",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Development/UpdateScreen/English",
+    "WebComponentKey": "efd17e0a-2d10-986b-1e48-eafe57b84b35"
+}
