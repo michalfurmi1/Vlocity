@@ -55,6 +55,7 @@ manifest:
 - VqMachine
 - VqResource
 - OmniScript/Development_UpdateScreen_English
+- DataRaptor/ExtractFieldSet
 maxDepth: -1
 autoUpdateSettings: true
 separateMatrixVersions: true
