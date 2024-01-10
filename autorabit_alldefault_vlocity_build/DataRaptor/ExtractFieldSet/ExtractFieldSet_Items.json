@@ -45,5 +45,28 @@
         "OutputObjectName": "json",
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "GlobalKey": "ExtractFieldSetCustom1347",
+        "InputFieldName": "BillingCity",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractFieldSet",
+        "OmniDataTransformationId": {
+            "Name": "ExtractFieldSet",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractFieldSet",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "3",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
     }
 ]
