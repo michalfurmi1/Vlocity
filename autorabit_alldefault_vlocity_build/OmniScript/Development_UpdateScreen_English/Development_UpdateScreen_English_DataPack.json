@@ -10,7 +10,8 @@
     "OmniProcessElement": [
         "Development_UpdateScreen_English_Element_Extract-Data-From-Account.json",
         "Development_UpdateScreen_English_Element_Welcome-Screen-Dev.json",
-        "Development_UpdateScreen_English_Element_HowManyDevelopers.json"
+        "Development_UpdateScreen_English_Element_HowManyDevelopers.json",
+        "Development_UpdateScreen_English_Element_How_many_lines.json"
     ],
     "OmniProcessType": "OmniScript",
     "PropertySetConfig": "Development_UpdateScreen_English_PropertySetConfig.json",
@@ -19,5 +20,5 @@
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcess",
     "VlocityRecordSourceKey": "OmniProcess/Development/UpdateScreen/English",
-    "WebComponentKey": "9c566232-c130-838d-a217-210285341706"
+    "WebComponentKey": "cb212f3c-5aee-a0bf-a047-d509aec862cf"
 }
