@@ -2,7 +2,7 @@
     {
         "FilterGroup": 0,
         "FilterOperator": "<>",
-        "FilterValue": "Michal",
+        "FilterValue": "MichalTest",
         "GlobalKey": "OmniDataRaptorCustom9598",
         "InputFieldName": "Name",
         "InputObjectName": "Contact",
