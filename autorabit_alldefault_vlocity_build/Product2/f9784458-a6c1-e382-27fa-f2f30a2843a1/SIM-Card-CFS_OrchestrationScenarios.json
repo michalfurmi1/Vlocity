@@ -1,0 +1,770 @@
+[
+    {
+        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"OR\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"ControlMigration\",\"right-side-type\":\"value\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"PostPaidMigration\",\"right-side-type\":\"value\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"MVNOMigration\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__GlobalKey__c": "9c8a7d3e-af1d-d1ff-fbab-fa2897898fd1",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Atualiza Número SIM - Migração",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Atualiza Número SIM - Migração",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "Atualiza Número Migração SIM CARD",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/Atualiza Número Migração SIM CARD/9c8a7d3e-af1d-d1ff-fbab-fa2897898fd1/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Add;Modify",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"MVNOMigration\"}",
+        "%vlocity_namespace%__GlobalKey__c": "75c3d39f-48ea-d94d-6196-2f14f4607c15",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Cancelar Linha MVNO",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Cancelar Linha MVNO",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "Cancelar Linha MVNO",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/Cancelar Linha MVNO/75c3d39f-48ea-d94d-6196-2f14f4607c15/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"PrepaidRemoteActivation\"}",
+        "%vlocity_namespace%__GlobalKey__c": "45d6d312-13b6-c614-bce4-ed6509ac497f",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Controle de Inventário",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Controle de Inventário",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "SIMCard_CFS_ADD",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/SIMCard_CFS_ADD/45d6d312-13b6-c614-bce4-ed6509ac497f/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"PrepaidRemoteActivation\"}",
+        "%vlocity_namespace%__GlobalKey__c": "5e2e8fd7-dde7-abc3-4b2b-896ce576d317",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Notificação ao Cliente",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Notificação ao Cliente",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "SIMCard_CFS_ADD",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/SIMCard_CFS_ADD/5e2e8fd7-dde7-abc3-4b2b-896ce576d317/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"PrepaidRemoteActivation\"}",
+        "%vlocity_namespace%__GlobalKey__c": "63ae6dcf-fceb-0d90-7575-d7fa544fc43a",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Notificação para Início do Cadastro",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Notificação para Início do Cadastro",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "SIMCard_CFS_ADD",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/SIMCard_CFS_ADD/63ae6dcf-fceb-0d90-7575-d7fa544fc43a/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },    
+    {
+        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"OR\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"ControlMigration\",\"right-side-type\":\"value\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"PostPaidMigration\",\"right-side-type\":\"value\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"Habilitação Pré\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"MVNOMigration\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__GlobalKey__c": "5f43480b-e66c-40d4-df30-3a2ba8b26cdf",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Reserva de Número",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Reserva de Número",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "SIMCard_CFS_ADD",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/SIMCard_CFS_ADD/5f43480b-e66c-40d4-df30-3a2ba8b26cdf/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },    
+    {
+        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"OR\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"ControlMigration\",\"right-side-type\":\"value\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"PostPaidMigration\",\"right-side-type\":\"value\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"Habilitação Pré\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"MVNOMigration\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__GlobalKey__c": "aaf2f29e-618f-54d3-3c0e-8d4fe97f4df6",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Gerenciamento de Inventário",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Gerenciamento de Inventário",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "SIMCard_CFS_ADD",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/SIMCard_CFS_ADD/aaf2f29e-618f-54d3-3c0e-8d4fe97f4df6/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+        {
+        "%vlocity_namespace%__Action__c": "Add;Modify",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"OR\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"BlockLine\",\"right-side-type\":\"value\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"UnblockLine\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__GlobalKey__c": "44111f2f-fbc9-048d-96a3-9545c02d3331",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Bloqueio e Desbloqueio de Linha - SmartSim",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Bloqueio e Desbloqueio de Linha - SmartSim",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "LockSimRule_Modify",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/LockSimRule_Modify/44111f2f-fbc9-048d-96a3-9545c02d3331/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+        {
+        "%vlocity_namespace%__Action__c": "Add;Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"AND\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"EffectPortOut\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__GlobalKey__c": "294e4951-38b9-95aa-61e3-347e050a3b0a",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Controle de Inventário em Portout",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Controle de Inventário em Portout",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "Controle de Inventário em Portout",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/Controle de Inventário em Portout/294e4951-38b9-95aa-61e3-347e050a3b0a/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Add;Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"AND\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"ATT_RT_NETWORK_SIM_CARD_TYPE\",\"left-side-name\":\"Tipo de Rede Sim Card\",\"left-side-type\":\"attribute\",\"left-side-category\":\"Características de SIM Card\",\"left-side-datatype\":\"Text\",\"op\":\"=\",\"right-side\":\"HRS\"},{\"type\":\"AND\",\"singleconditions\":[{\"type\":\"OR\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"ATT_RT_ORDER_TYPE\",\"left-side-datatype\":\"Text\",\"left-side-type\":\"attribute\",\"left-side-category\":\"Atributos Técnicos\",\"left-side-name\":\"Tipo de Ordem\",\"op\":\"=\",\"right-side\":\"ChangeSimCard\",\"right-side-type\":\"value\"},{\"type\":\"SIMPLE\",\"left-side\":\"ATT_RT_ORDER_TYPE\",\"left-side-datatype\":\"Text\",\"left-side-type\":\"attribute\",\"left-side-category\":\"Atributos Técnicos\",\"left-side-name\":\"Tipo de Ordem\",\"op\":\"=\",\"right-side\":\"Habilitação Pré\",\"right-side-type\":\"value\"},{\"type\":\"SIMPLE\",\"left-side\":\"ATT_RT_ORDER_TYPE\",\"left-side-datatype\":\"Text\",\"left-side-type\":\"attribute\",\"left-side-category\":\"Atributos Técnicos\",\"left-side-name\":\"Tipo de Ordem\",\"op\":\"=\",\"right-side\":\"MVNOMigration\",\"right-side-type\":\"value\"}]}]}]}",
+        "%vlocity_namespace%__GlobalKey__c": "9f602da2-c545-12c8-9e29-117fc5b884ef",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Smart SIM - Ações de Chip HRS",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Smart SIM - Ações de Chip HRS",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "SmartSIMRFS_AcoesChipHRS_ADD",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/SmartSIMRFS_AcoesChipHRS_ADD/9f602da2-c545-12c8-9e29-117fc5b884ef/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Add;Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"OR\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"BlockLine\",\"right-side-type\":\"value\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"UnblockLine\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__GlobalKey__c": "d429d6ae-e5d6-13a4-1d90-904a7b6ea984",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Bloqueio e Desbloqueio de Linha - E2E",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Bloqueio e Desbloqueio de Linha - E2E",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "LockLineSIMCard_Modify",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/LockLineSIMCard_Modify/d429d6ae-e5d6-13a4-1d90-904a7b6ea984/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Add;Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"OR\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"EffectPortOut\",\"right-side-type\":\"value\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"ReactivationLine\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__GlobalKey__c": "9d101e7d-a185-b696-854a-d51924968c2f",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Atualização de Status no Smart SIM",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Atualização de Status no Smart SIM",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "Atualização de Status no Smart SIM",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/Atualização de Status no Smart SIM/9d101e7d-a185-b696-854a-d51924968c2f/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Add;Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"ChangeSimCard\"}",
+        "%vlocity_namespace%__GlobalKey__c": "6a9ed695-2ffc-c991-60c1-40f52109a01a",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Troca de SIM Card - E2E",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Troca de SIM Card - E2E",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "SIMCardCFS_ADD",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/SIMCardCFS_ADD/6a9ed695-2ffc-c991-60c1-40f52109a01a/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Add;Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"ChangeSimCard\"}",
+        "%vlocity_namespace%__GlobalKey__c": "71fd9eb0-7417-e5b7-97e3-33437f8a65f0",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Troca de SIM Card - Inventário",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Troca de SIM Card - Inventário",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "SIMCard_CFS_ADD",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/SIMCard_CFS_ADD/71fd9eb0-7417-e5b7-97e3-33437f8a65f0/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Add;Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"ChangeSimCard\"}",
+        "%vlocity_namespace%__GlobalKey__c": "f6385914-1de4-a07d-a2eb-1a6a430b33d4",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Troca de SIM Card - Smart SIM",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Troca de SIM Card - Smart SIM",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "SmartSIMRFS_ADD",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/SmartSIMRFS_ADD/f6385914-1de4-a07d-a2eb-1a6a430b33d4/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Add;Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"ReactivationLine\"}",
+        "%vlocity_namespace%__GlobalKey__c": "f76702ed-89d8-3d52-ea63-a8b1bf6ba589",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Reativação - E2E",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Reativação - E2E",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "Reactivation_Modify",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/Reactivation_Modify/f76702ed-89d8-3d52-ea63-a8b1bf6ba589/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Disconnect",
+        "%vlocity_namespace%__ConditionData__c": "{\r\n\"type\": \"AND\",\r\n\"singleconditions\": [\r\n{\r\n\"type\": \"SIMPLE\",\r\n\"left-side\": \"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\r\n\"left-side-datatype\": \"picklist\",\r\n\"left-side-type\": \"field-FRLine\",\r\n\"op\": \"=\",\r\n\"right-side\": \"Migration\",\r\n\"right-side-type\": \"value\"\r\n}\r\n]\r\n}",
+        "%vlocity_namespace%__GlobalKey__c": "71835fae-e567-f653-3abe-98e8cfc64815",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Desprograma Linha - GSIM",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Desprograma Linha - GSIM",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "Desprogramação de Linha - GSIM",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/Desprogramação de Linha - GSIM/71835fae-e567-f653-3abe-98e8cfc64815/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"AND\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"ChangeServiceIdentifier\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.hasPortability__c\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"!=\",\"right-side\":\"Sim\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__GlobalKey__c": "07502e48-ac5b-c691-06e4-9fe0fd4823db",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Troca de Número SIGAN",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Troca de Número SIGAN",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "MSISDN_Change_SIGAN",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/MSISDN_Change_SIGAN/07502e48-ac5b-c691-06e4-9fe0fd4823db/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"AND\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"ChangeServiceIdentifier\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.hasPortability__c\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"!=\",\"right-side\":\"Sim\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__GlobalKey__c": "1baa586c-fbeb-be4d-b3ab-f1275a99d834",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Troca de Número Smart Finance",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Troca de Número Smart Finance",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "MSISDN_Freeze_SmartFinance",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/MSISDN_Freeze_SmartFinance/1baa586c-fbeb-be4d-b3ab-f1275a99d834/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"AND\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"ChangeServiceIdentifier\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.hasPortability__c\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"!=\",\"right-side\":\"Sim\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__GlobalKey__c": "38c2d99d-c3df-6624-4cf0-80cecd0409aa",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Troca de Número SmartSim",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Troca de Número SmartSim",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "MSISDN_Change_SmartSim",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/MSISDN_Change_SmartSim/38c2d99d-c3df-6624-4cf0-80cecd0409aa/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"AND\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"ChangeServiceIdentifier\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.hasPortability__c\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"!=\",\"right-side\":\"Sim\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__GlobalKey__c": "bdbec63c-e94f-4177-13eb-4c17d311afb6",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Troca de Número GSIM",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Troca de Número GSIM",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "MSISDN_Change_GSIM",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/MSISDN_Change_GSIM/bdbec63c-e94f-4177-13eb-4c17d311afb6/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"AND\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"ChangeServiceIdentifier\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.hasPortability__c\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"!=\",\"right-side\":\"Sim\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__GlobalKey__c": "da22c3df-3d58-87d8-07bd-03651aa96abd",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Troca de Número E2E",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Troca de Número E2E",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "MSISDN_Change",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/MSISDN_Change/da22c3df-3d58-87d8-07bd-03651aa96abd/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"ReactivationLine\"}",
+        "%vlocity_namespace%__GlobalKey__c": "038f4b3a-137b-a550-e78e-c9cd7925cbd5",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Reativação SIGAN",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Reativação SIGAN",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "Reativação - Atualiza número em uso SIGAN",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/Reativação - Atualiza número em uso SIGAN/038f4b3a-137b-a550-e78e-c9cd7925cbd5/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"AND\",\"singleconditions\":[{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"ChangeServiceIdentifier\",\"right-side-type\":\"value\"},{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.hasPortability__c\",\"left-side-datatype\":\"picklist\",\"left-side-type\":\"field-FRLine\",\"op\":\"=\",\"right-side\":\"Sim\",\"right-side-type\":\"value\"}]}",
+        "%vlocity_namespace%__GlobalKey__c": "a2697bca-d08c-a92d-61f6-8ce132f92088",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Troca de Número Portin - Atualização Inventario",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Troca de Número Portin - Atualização Inventario",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "SIMCARDCFC_TrocadeNúmeroComPortIn",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/SIMCARDCFC_TrocadeNúmeroComPortIn/a2697bca-d08c-a92d-61f6-8ce132f92088/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"NumberSwap\"}",
+        "%vlocity_namespace%__GlobalKey__c": "0f1ca672-92da-c8d7-38ec-c81d810abb4a",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Swap de Número - SIGAN",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Swap de Número - SIGAN",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "MSISDN_Swap_Change_SIGAN",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/MSISDN_Swap_Change_SIGAN/0f1ca672-92da-c8d7-38ec-c81d810abb4a/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"NumberSwap\"}",
+        "%vlocity_namespace%__GlobalKey__c": "68039e92-d9e1-8be0-5384-d72f9b2583b6",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Swap de Número - GSIM",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Swap de Número - GSIM",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "MSISDN_Swap_Change_GSIM",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/MSISDN_Swap_Change_GSIM/68039e92-d9e1-8be0-5384-d72f9b2583b6/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"NumberSwap\"}",
+        "%vlocity_namespace%__GlobalKey__c": "6c26e829-8948-86e0-ba1a-131284b7da32",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Swap de Número - Smart Sim",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Swap de Número - Smart Sim",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "MSISDN_Swap_Change_SmartSim",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/MSISDN_Swap_Change_SmartSim/6c26e829-8948-86e0-ba1a-131284b7da32/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"NumberSwap\"}",
+        "%vlocity_namespace%__GlobalKey__c": "9577ce3a-0c1e-1d04-4fde-33ad7383e5d2",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Swap de Número - Notificação",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Swap de Número - Notificação",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "SwapNumero_Notificação",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/SwapNumero_Notificação/9577ce3a-0c1e-1d04-4fde-33ad7383e5d2/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"NumberSwap\"}",
+        "%vlocity_namespace%__GlobalKey__c": "af294413-9ce4-bb11-b00c-c26140c3b033",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Swap de Número - E2E",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Swap de Número - E2E",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "MSISDN_Swap_StartOM",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/MSISDN_Swap_StartOM/af294413-9ce4-bb11-b00c-c26140c3b033/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"NumberSwap\"}",
+        "%vlocity_namespace%__GlobalKey__c": "d128930f-a178-44b2-af14-346a36cc754b",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Swap de Número - Smart Finance",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Swap de Número - Smart Finance",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "MSISDN_Swap_Freeze_SmartFinance",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/MSISDN_Swap_Freeze_SmartFinance/d128930f-a178-44b2-af14-346a36cc754b/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"ReversalPortout\"}",
+        "%vlocity_namespace%__GlobalKey__c": "4ebd7de1-bd17-193b-057a-e7e919432b9c",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Estorno de Portout - Atualização Inventario",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Estorno de Portout - Atualização Inventario",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "EstornoPortout_Modify_SIMCARDCFS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/EstornoPortout_Modify_SIMCARDCFS/4ebd7de1-bd17-193b-057a-e7e919432b9c/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify;NoChange",
+        "%vlocity_namespace%__ConditionData__c": "{\"type\":\"SIMPLE\",\"left-side\":\"%vlocity_namespace%__FulfilmentRequestID__r.%vlocity_namespace%__OrderId__r.Type\",\"left-side-type\":\"field-FRLine\",\"left-side-datatype\":\"picklist\",\"op\":\"=\",\"right-side\":\"ReversalPortout\"}",
+        "%vlocity_namespace%__GlobalKey__c": "86b1dd6d-ed03-5bf7-3e9b-c4addb1cca68",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "Estorno de Portout - Controle de Inventário",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/Estorno de Portout - Controle de Inventário",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f9784458-a6c1-e382-27fa-f2f30a2843a1",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "EstornoPortout_Modify_SmartSIMRFS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/EstornoPortout_Modify_SmartSIMRFS/86b1dd6d-ed03-5bf7-3e9b-c4addb1cca68/Product2/f9784458-a6c1-e382-27fa-f2f30a2843a1"
+    }
+]
