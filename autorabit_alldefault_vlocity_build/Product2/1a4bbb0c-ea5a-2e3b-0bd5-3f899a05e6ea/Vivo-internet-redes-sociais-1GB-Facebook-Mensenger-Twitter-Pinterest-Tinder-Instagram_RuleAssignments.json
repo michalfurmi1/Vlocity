@@ -1,0 +1,19 @@
+[
+    {
+        "%vlocity_namespace%__ObjectId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "1a4bbb0c-ea5a-2e3b-0bd5-3f899a05e6ea",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/1a4bbb0c-ea5a-2e3b-0bd5-3f899a05e6ea",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__RuleId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ac54cb4c-59fe-4ff7-0a64-4501b06e1971",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Rule__c/ac54cb4c-59fe-4ff7-0a64-4501b06e1971",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Rule__c"
+        },
+        "%vlocity_namespace%__RuleType__c": "Qualification",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__RuleAssignment__c"
+    }
+]
