@@ -69,6 +69,7 @@ manifest:
 - AttributeCategory/ACAT_TECH
 - AttributeCategory/ACAT_USAGE_PRICING
 - EntityFilter/404ffe98-5372-bc3b-2b81-58b689fdf187
+- OrchestrationPlanDefinition/TIPO
 maxDepth: -1
 autoUpdateSettings: true
 separateMatrixVersions: true
