@@ -57,6 +57,17 @@ manifest:
 - OmniScript/Development_UpdateScreen_English
 - DataRaptor/ExtractFieldSet
 - DataRaptor/OmniDataRaptor
+- AttributeCategory/ACAT_ACC
+- AttributeCategory/ATC_TECHNICAL
+- AttributeCategory/ACAT_COMM_COMPONENT
+- AttributeCategory/ACAT_COMM_OFFER
+- AttributeCategory/ATT_CODE_IS
+- AttributeCategory/ACAT_Phones
+- AttributeCategory/ACAT_Plans
+- AttributeCategory/ACAT_SVSLV
+- AttributeCategory/13632dc2-e1fe-7fa7-be36-175bc5886cc2
+- AttributeCategory/ACAT_TECH
+- AttributeCategory/ACAT_USAGE_PRICING
 maxDepth: -1
 autoUpdateSettings: true
 separateMatrixVersions: true
