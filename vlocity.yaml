@@ -68,6 +68,7 @@ manifest:
 - AttributeCategory/13632dc2-e1fe-7fa7-be36-175bc5886cc2
 - AttributeCategory/ACAT_TECH
 - AttributeCategory/ACAT_USAGE_PRICING
+- EntityFilter/404ffe98-5372-bc3b-2b81-58b689fdf187
 maxDepth: -1
 autoUpdateSettings: true
 separateMatrixVersions: true
