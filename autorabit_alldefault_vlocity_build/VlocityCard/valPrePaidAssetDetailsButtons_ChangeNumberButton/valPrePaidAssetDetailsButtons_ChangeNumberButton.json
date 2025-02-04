@@ -1,0 +1,632 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "id": 4,
+                "name": "recordId",
+                "val": "02i76000009Pdg3AAC"
+            }
+        ],
+        "orderBy": {
+            "isReverse": "",
+            "name": ""
+        },
+        "type": "Custom",
+        "value": {
+            "body": "{}",
+            "dsDelay": "",
+            "resultVar": ""
+        }
+    },
+    "dynamicCanvasWidth": {
+        "type": "desktop"
+    },
+    "enableLwc": true,
+    "events": [
+        {
+            "actionList": [
+                {
+                    "actionIndex": 0,
+                    "card": "{card}",
+                    "draggable": true,
+                    "isOpen": false,
+                    "key": "1717678575429-6fwmgihg5",
+                    "label": "CheckBiometric",
+                    "stateAction": {
+                        "Web Page": {
+                            "targetName": "/apex"
+                        },
+                        "displayName": "Action",
+                        "id": "flex-action-1730923567730",
+                        "message": "{\"type\":\"IntegrationProcedures\",\"value\":{\"dsDelay\":\"\",\"ipMethod\":\"val_ValidateAllJourneys\",\"vlocityAsync\":false,\"inputMap\":{\"serviceType\":\"506\",\"InteractionId\":\"{Parent.InteractionId}\",\"AccountId\":\"{Parent.AccountId}\",\"AssetId\":\"{Parent.AssetId}\",\"Functionality\":\"ChangeServiceIdentifier\",\"PreSetValues\":\"true\",\"CheckBiometric\":\"true\",\"ValidatePortability\":\"true\",\"ValidateOrder\":\"true\",\"ValidateJudicialRetention\":\"true\"},\"jsonMap\":\"{\\\"recordId\\\":\\\"{recordId}\\\",\\\"Parent.InteractionId\\\":\\\"{Parent.InteractionId}\\\",\\\"Parent.AccountId\\\":\\\"{Parent.AccountId}\\\",\\\"Parent.AssetId\\\":\\\"{Parent.AssetId}\\\"}\"},\"orderBy\":{\"name\":\"\",\"isReverse\":\"\"},\"contextVariables\":[{\"name\":\"recordId\",\"val\":\"02i76000009Pdg3AAC\",\"id\":4},{\"name\":\"Parent.InteractionId\",\"val\":\"\",\"id\":2},{\"name\":\"Parent.AccountId\",\"val\":\"\",\"id\":4},{\"name\":\"Parent.AssetId\",\"val\":\"\",\"id\":6}]}",
+                        "openUrlIn": "Current Window",
+                        "targetType": "Web Page",
+                        "type": "DataAction",
+                        "vlocityIcon": "standard-default"
+                    }
+                },
+                {
+                    "actionIndex": 1,
+                    "card": "{card}",
+                    "draggable": true,
+                    "isOpen": true,
+                    "key": "1717691976336-js5lomzmi",
+                    "label": "valToast",
+                    "stateAction": {
+                        "actionConditions": {
+                            "group": [
+                                {
+                                    "field": "blockJourney",
+                                    "hasMergeField": false,
+                                    "id": "state-new-condition-0",
+                                    "operator": "==",
+                                    "type": "custom",
+                                    "value": "true"
+                                }
+                            ],
+                            "id": "state-condition-object",
+                            "isParent": true
+                        },
+                        "displayName": "Action",
+                        "eventName": "valToast",
+                        "extraParams": {
+                            "message": "{message}",
+                            "variant": "{variant}"
+                        },
+                        "hasExtraParams": true,
+                        "id": "flex-action-1733924773012",
+                        "message": "showToast",
+                        "openUrlIn": "Current Window",
+                        "subType": "PubSub",
+                        "type": "Event",
+                        "vlocityIcon": "standard-default"
+                    }
+                },
+                {
+                    "actionIndex": 2,
+                    "card": "{card}",
+                    "draggable": true,
+                    "isOpen": false,
+                    "key": "1731524441323-hljq4bk7v",
+                    "label": "checkJudicialRetention",
+                    "stateAction": {
+                        "Web Page": {
+                            "targetName": "/apex"
+                        },
+                        "actionConditions": {
+                            "group": [
+                                {
+                                    "field": "biometricError",
+                                    "hasMergeField": false,
+                                    "id": "state-new-condition-0",
+                                    "operator": "!=",
+                                    "type": "custom",
+                                    "value": "true"
+                                }
+                            ],
+                            "id": "state-condition-object",
+                            "isParent": true
+                        },
+                        "displayName": "Action",
+                        "id": "flex-action-1731530808030",
+                        "message": "{\"type\":\"IntegrationProcedures\",\"value\":{\"dsDelay\":\"\",\"ipMethod\":\"val_CheckJudicialRetention\",\"vlocityAsync\":false,\"inputMap\":{\"AssetId\":\"{Parent.AssetId}\"},\"jsonMap\":\"{\\\"Parent.AssetId\\\":\\\"{Parent.AssetId}\\\"}\"},\"orderBy\":{\"name\":\"\",\"isReverse\":\"\"},\"contextVariables\":[{\"name\":\"Parent.AssetId\",\"val\":\"02i59000008YHXaAAO\",\"id\":1}]}",
+                        "openUrlIn": "Current Window",
+                        "targetType": "Web Page",
+                        "type": "DataAction",
+                        "vlocityIcon": "standard-default"
+                    }
+                },
+                {
+                    "actionIndex": 5,
+                    "card": "{card}",
+                    "draggable": true,
+                    "isOpen": true,
+                    "key": "1731530817702-tr1s23tqj",
+                    "label": "checkJuditialToast",
+                    "stateAction": {
+                        "actionConditions": {
+                            "group": [
+                                {
+                                    "field": "blockJourney",
+                                    "hasMergeField": false,
+                                    "id": "state-new-condition-0",
+                                    "operator": "==",
+                                    "type": "custom",
+                                    "value": "true"
+                                }
+                            ],
+                            "id": "state-condition-object",
+                            "isParent": true
+                        },
+                        "displayName": "Action",
+                        "eventName": "valToast",
+                        "extraParams": {
+                            "message": "{message}",
+                            "variant": "{variant}"
+                        },
+                        "hasExtraParams": true,
+                        "id": "flex-action-1733924771233",
+                        "message": "showToast",
+                        "openUrlIn": "Current Window",
+                        "subType": "PubSub",
+                        "type": "Event",
+                        "vlocityIcon": "standard-default"
+                    }
+                },
+                {
+                    "actionIndex": 2,
+                    "card": "{card}",
+                    "contextId": "\\{Parent.InteractionId}",
+                    "draggable": true,
+                    "isOpen": false,
+                    "key": "1717692073704-3g50dqvkz",
+                    "label": "ActionOS",
+                    "stateAction": {
+                        "actionConditions": {
+                            "group": [
+                                {
+                                    "field": "blockJourney",
+                                    "hasMergeField": false,
+                                    "id": "state-new-condition-7",
+                                    "operator": "==",
+                                    "type": "custom",
+                                    "value": "false"
+                                }
+                            ],
+                            "id": "state-condition-object",
+                            "isParent": true
+                        },
+                        "displayName": "Action",
+                        "extraParams": {
+                            "c__AccountId": "{Parent.AccountId}",
+                            "c__AssetId": "{Parent.AssetId}",
+                            "c__InteractionNumber": "{Parent.InteractionNumber}"
+                        },
+                        "hasExtraParams": true,
+                        "id": "flex-action-1717692184989",
+                        "isLwcOS": true,
+                        "layoutType": "lightning",
+                        "omniType": {
+                            "Id": "a3076000000AsCwAAK",
+                            "Name": "val/changeNumberJourney/Portuguese (Brazil)",
+                            "isLwcOs": true
+                        },
+                        "openUrlIn": "New Tab/Window",
+                        "tabIcon": "utility:retweet",
+                        "tabLabel": "Troca de Número",
+                        "type": "OmniScript",
+                        "vlocityIcon": "standard-default"
+                    }
+                },
+                {
+                    "actionIndex": 3,
+                    "card": "{card}",
+                    "contextId": "\\{Parent.InteractionId}",
+                    "draggable": true,
+                    "isOpen": false,
+                    "key": "1717692212039-5q2lqsz79",
+                    "label": "PalitagemManual",
+                    "stateAction": {
+                        "actionConditions": {
+                            "group": [
+                                {
+                                    "field": "palitagem",
+                                    "hasMergeField": false,
+                                    "id": "state-new-condition-14",
+                                    "operator": "==",
+                                    "type": "custom",
+                                    "value": "true"
+                                }
+                            ],
+                            "id": "state-condition-object",
+                            "isParent": true
+                        },
+                        "displayName": "Action",
+                        "extraParams": {
+                            "c__AccountId": "{Parent.AccountId}",
+                            "c__AssetId": "{Parent.AssetId}",
+                            "c__CustomerInteractionId": "{Parent.InteractionId}",
+                            "c__InteractionNumber": "{Parent.InteractionNumber}",
+                            "c__SourceCalled": "SalesJourney",
+                            "c__lineNumber": "{Products.LineNumber}"
+                        },
+                        "hasExtraParams": true,
+                        "id": "flex-action-1717692324005",
+                        "isLwcOS": true,
+                        "layoutType": "lightning",
+                        "omniType": {
+                            "Id": "a3076000000AsWyAAK",
+                            "Name": "val/AddRelationShipTopic/English",
+                            "isLwcOs": true
+                        },
+                        "openUrlIn": "Current Window",
+                        "tabIcon": "standard:cancel_checkout",
+                        "tabLabel": "Palitar",
+                        "type": "OmniScript",
+                        "vlocityIcon": "standard-default"
+                    }
+                }
+            ],
+            "channelname": "valPrePaidAssetDetailsButtons_ChannelNameButtons_{recordId}",
+            "displayLabel": "valPrePaidAssetDetailsButtons_ChannelNameButtons_{recordId}:trocaDeNumero_{recordId}",
+            "element": "action",
+            "eventLabel": "pubsub",
+            "eventname": "trocaDeNumero_{recordId}",
+            "eventtype": "pubsub",
+            "key": "event-0",
+            "recordIndex": "0",
+            "showSpinner": "true"
+        }
+    ],
+    "globalCSS": false,
+    "isFlex": true,
+    "lwc": {
+        "DeveloperName": "cfValPrePaidAssetDetailsButtons_ChangeNumberButton_9_Telefonica",
+        "Id": "0Rb59000000I0ueCAC",
+        "ManageableState": "unmanaged",
+        "MasterLabel": "cfValPrePaidAssetDetailsButtons_ChangeNumberButton_9_Telefonica",
+        "NamespacePrefix": "c"
+    },
+    "multilanguageSupport": true,
+    "osSupport": true,
+    "sessionVars": [
+        {
+            "id": 3,
+            "isApi": true,
+            "name": "AssetId",
+            "val": ""
+        }
+    ],
+    "states": [
+        {
+            "actions": [
+            ],
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "class": "slds-col ",
+                            "element": "action",
+                            "elementLabel": "Action-8-clone-0",
+                            "name": "Action",
+                            "property": {
+                                "actionList": [
+                                    {
+                                        "actionIndex": 0,
+                                        "card": "{card}",
+                                        "draggable": true,
+                                        "isOpen": true,
+                                        "key": "1717167849919-5sf2294tw",
+                                        "label": "event",
+                                        "stateAction": {
+                                            "displayName": "Action",
+                                            "eventName": "valPrePaidAssetDetailsButtons_ChannelNameButtons_{recordId}",
+                                            "id": "flex-action-1737493173721",
+                                            "message": "trocaDeNumero_{recordId}",
+                                            "openUrlIn": "Current Window",
+                                            "subType": "PubSub",
+                                            "type": "Event",
+                                            "vlocityIcon": "standard-default"
+                                        }
+                                    }
+                                ],
+                                "card": "{card}",
+                                "data-conditions": {
+                                    "group": [
+                                    ],
+                                    "id": "state-condition-object",
+                                    "isParent": true
+                                },
+                                "flyoutChannel": "close_modal",
+                                "flyoutDetails": {
+                                },
+                                "hideActionIcon": true,
+                                "iconColor": "#792BA4",
+                                "iconName": "utility:retweet",
+                                "iconOnly": false,
+                                "iconSize": "small",
+                                "label": "Troca de Número",
+                                "record": "{record}",
+                                "showSpinner": "true",
+                                "stateObj": "{record}",
+                                "styles": {
+                                    "label": {
+                                        "color": "#792BA4",
+                                        "fontSize": "12px"
+                                    }
+                                }
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "#cccccc",
+                                    "radius": "5px",
+                                    "style": "",
+                                    "type": [
+                                        "border_top",
+                                        "border_right",
+                                        "border_bottom",
+                                        "border_left"
+                                    ],
+                                    "width": "1"
+                                },
+                                "class": "slds-text-align_left slds-border_top slds-border_right slds-border_bottom slds-border_left slds-p-top_small slds-p-left_small ",
+                                "container": {
+                                    "class": ""
+                                },
+                                "customClass": "",
+                                "elementStyleProperties": {
+                                    "iconColor": "#792BA4",
+                                    "iconSize": "small",
+                                    "styles": {
+                                        "label": {
+                                            "color": "#792BA4",
+                                            "fontSize": "12px"
+                                        }
+                                    }
+                                },
+                                "inlineStyle": "height: 55px;",
+                                "margin": [
+                                ],
+                                "padding": [
+                                    {
+                                        "label": "top:small",
+                                        "size": "small",
+                                        "type": "top"
+                                    },
+                                    {
+                                        "label": "left:small",
+                                        "size": "small",
+                                        "type": "left"
+                                    }
+                                ],
+                                "size": {
+                                    "default": "12",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_12-of-12 ",
+                                "style": "     border-top: #cccccc 1px solid;border-right: #cccccc 1px solid;border-bottom: #cccccc 1px solid;border-left: #cccccc 1px solid; \n    border-radius:5px;     height: 55px;",
+                                "text": {
+                                    "align": "left",
+                                    "color": ""
+                                }
+                            },
+                            "styleObjects": [
+                                {
+                                    "conditionString": "",
+                                    "conditions": "default",
+                                    "draggable": false,
+                                    "key": 0,
+                                    "label": "Default",
+                                    "name": "Default",
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "#cccccc",
+                                            "radius": "5px",
+                                            "style": "",
+                                            "type": [
+                                                "border_top",
+                                                "border_right",
+                                                "border_bottom",
+                                                "border_left"
+                                            ],
+                                            "width": "1"
+                                        },
+                                        "class": "slds-text-align_left slds-border_top slds-border_right slds-border_bottom slds-border_left slds-p-top_small slds-p-left_small ",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "customClass": "",
+                                        "elementStyleProperties": {
+                                            "iconColor": "#792BA4",
+                                            "iconSize": "small",
+                                            "styles": {
+                                                "label": {
+                                                    "color": "#792BA4",
+                                                    "fontSize": "12px"
+                                                }
+                                            }
+                                        },
+                                        "inlineStyle": "height: 55px;",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                            {
+                                                "label": "top:small",
+                                                "size": "small",
+                                                "type": "top"
+                                            },
+                                            {
+                                                "label": "left:small",
+                                                "size": "small",
+                                                "type": "left"
+                                            }
+                                        ],
+                                        "size": {
+                                            "default": "12",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_12-of-12 ",
+                                        "style": "     border-top: #cccccc 1px solid;border-right: #cccccc 1px solid;border-bottom: #cccccc 1px solid;border-left: #cccccc 1px solid; \n    border-radius:5px;     height: 55px;",
+                                        "text": {
+                                            "align": "left",
+                                            "color": ""
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": "element",
+                            "userUpdatedElementLabel": true
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "documents": [
+            ],
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "background": {
+                    "color": "",
+                    "image": "",
+                    "position": "",
+                    "repeat": "",
+                    "size": ""
+                },
+                "border": {
+                    "color": "",
+                    "radius": "",
+                    "style": "",
+                    "type": "",
+                    "width": ""
+                },
+                "class": "",
+                "container": {
+                    "class": ""
+                },
+                "elementStyleProperties": {
+                },
+                "inlineStyle": "",
+                "margin": [
+                ],
+                "padding": [
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": false
+                },
+                "sizeClass": "slds-size_12-of-12 ",
+                "style": "      \n         ",
+                "text": {
+                    "align": "",
+                    "color": ""
+                }
+            }
+        }
+    ],
+    "theme": "slds",
+    "title": "valPrePaidAssetDetailsButtons_ChangeNumberButton",
+    "xmlJson": [
+        {
+            "@attributes": {
+                "targets": "lightning__AppPage",
+                "xmlns": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "name": "recordId",
+                        "type": "String"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "label": "AssetId",
+                        "name": "cfAssetId",
+                        "type": "String"
+                    }
+                }
+            ]
+        },
+        {
+            "@attributes": {
+                "targets": "lightningCommunity__Default",
+                "xmlns": ""
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "name": "recordId",
+                        "type": "String"
+                    }
+                }
+            ]
+        },
+        {
+            "@attributes": {
+                "targets": "lightning__HomePage"
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "name": "recordId",
+                        "type": "String"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "label": "AssetId",
+                        "name": "cfAssetId",
+                        "type": "String"
+                    }
+                }
+            ]
+        },
+        {
+            "@attributes": {
+                "targets": "lightning__RecordPage"
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "label": "AssetId",
+                        "name": "cfAssetId",
+                        "type": "String"
+                    }
+                }
+            ]
+        }
+    ],
+    "xmlObject": {
+        "apiVersion": 51,
+        "isExplicitImport": false,
+        "isExposed": true,
+        "masterLabel": "valPrePaidAssetDetailsButtons_ChangeNumberButton",
+        "runtimeNamespace": "%vlocity_namespace%",
+        "targetConfigs": "PHRhcmdldENvbmZpZyB4bWxucz0iaHR0cDovL3NvYXAuc2ZvcmNlLmNvbS8yMDA2LzA0L21ldGFkYXRhIiB0YXJnZXRzPSJsaWdodG5pbmdfX0FwcFBhZ2UiPjxwcm9wZXJ0eSBuYW1lPSJyZWNvcmRJZCIgdHlwZT0iU3RyaW5nIi8+PHByb3BlcnR5IG5hbWU9ImNmQXNzZXRJZCIgdHlwZT0iU3RyaW5nIiBsYWJlbD0iQXNzZXRJZCIvPjwvdGFyZ2V0Q29uZmlnPjx0YXJnZXRDb25maWcgeG1sbnM9IiIgdGFyZ2V0cz0ibGlnaHRuaW5nQ29tbXVuaXR5X19EZWZhdWx0Ij48cHJvcGVydHkgbmFtZT0icmVjb3JkSWQiIHR5cGU9IlN0cmluZyIvPjwvdGFyZ2V0Q29uZmlnPjx0YXJnZXRDb25maWcgdGFyZ2V0cz0ibGlnaHRuaW5nX19Ib21lUGFnZSI+PHByb3BlcnR5IG5hbWU9InJlY29yZElkIiB0eXBlPSJTdHJpbmciLz48cHJvcGVydHkgbmFtZT0iY2ZBc3NldElkIiB0eXBlPSJTdHJpbmciIGxhYmVsPSJBc3NldElkIi8+PC90YXJnZXRDb25maWc+PHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdfX1JlY29yZFBhZ2UiPjxwcm9wZXJ0eSBuYW1lPSJjZkFzc2V0SWQiIHR5cGU9IlN0cmluZyIgbGFiZWw9IkFzc2V0SWQiLz48L3RhcmdldENvbmZpZz4=",
+        "targets": {
+            "target": [
+                "lightningCommunity__Default",
+                "lightning__HomePage",
+                "lightning__AppPage",
+                "lightning__RecordPage"
+            ]
+        }
+    }
+}
