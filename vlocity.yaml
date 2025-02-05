@@ -57,6 +57,8 @@ manifest:
 - OmniScript/Development_UpdateScreen_English
 - DataRaptor/ExtractFieldSet
 - DataRaptor/OmniDataRaptor
+- Product2/d36613d5-fdfb-8a90-d988-54ce8cc4d9e8
+- Product2/208c8b08-57db-f741-63ad-e2f9d5cee81d
 maxDepth: -1
 autoUpdateSettings: true
 separateMatrixVersions: true
